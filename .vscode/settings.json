@@ -1,0 +1,6 @@
+{
+    "cSpell.words": [
+        "deepman"
+    ],
+    "python.formatting.provider": "black"
+}
