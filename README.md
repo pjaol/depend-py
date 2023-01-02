@@ -51,7 +51,7 @@ Represents the root path to the project you want to scan, the code is designed t
 
 e.g.
 ```
-python depend.py --path ../my-software-project/
+python depend.py --path ../my-software-project/ --section all
 
 ```
 ### Sections
@@ -64,7 +64,7 @@ The sections parameter gives you the ability to filter the output of the scan
 * source_pkgs - modules provided from your source code
 * missing - modules not installed 
 
- 
+
 
 
 
