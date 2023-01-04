@@ -1,4 +1,12 @@
 # Depend-py
+- [Depend-py](#depend-py)
+  - [Background](#background)
+  - [Installation](#installation)
+  - [Running](#running)
+    - [Path](#path)
+    - [Sections](#sections)
+    - [Output](#output)
+  - [TODO](#todo)
 
 ![XKDC Python Environment](https://imgs.xkcd.com/comics/python_environment.png)
 
@@ -67,8 +75,11 @@ The sections parameter gives you the ability to filter the output of the scan
 ### Output
 Here's an example from an old project I did a while back
 
-```json
+```sh
 10:45 $ python depend.py --path ../alexa_tolls/
+```
+
+```python
 {'active': {'project_pkgs': {},
             'vendor_pkgs': {'chalice': [('chalice', '1.12.0', ['attrs', 'botocore', 'click', 'enum-compat', 'jmespath', 'pip', 'setuptools', 'six', 'wheel', 'typing', 'watchdog'])],
                             'simple_rest_client': [('simple-rest-client', '1.0.4', ['python-status', 'httpx', 'python-slugify'])]}},
@@ -142,6 +153,17 @@ Here's an example from an old project I did a while back
  'system': ['pprint']}
 
 ```
+
+
+## TODO
+
+- [ ] Better output format
+  - support generation of requirements.txt? 
+  - support reports
+- [ ] Design to parse multiple projects
+- [ ] Version comparitors - identify collisions
+
+
 
 
 
